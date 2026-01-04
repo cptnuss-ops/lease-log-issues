@@ -1,0 +1,12 @@
+name: Feature Request
+description: Idee oder Wunsch für ein neues Feature
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Deine Idee
+      placeholder: Was sollte die App können?
+    validations:
+      required: true

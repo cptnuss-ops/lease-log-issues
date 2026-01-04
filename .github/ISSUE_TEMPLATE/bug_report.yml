@@ -1,0 +1,46 @@
+name: Bug Report
+description: Problem oder Fehler in der App melden
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Beschreibung
+      description: Was ist passiert?
+      placeholder: Bitte beschreibe den Fehler so genau wie möglich.
+    validations:
+      required: true
+
+  - type: input
+    id: ios_version
+    attributes:
+      label: iOS Version
+      placeholder: z. B. 17.2
+    validations:
+      required: false
+
+  - type: input
+    id: device
+    attributes:
+      label: Gerät
+      placeholder: z. B. iPhone 12, iPhone 15 Simulator
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Reproduzieren
+      placeholder: |
+        1. App öffnen
+        2. Auf „X“ tippen
+        3. …
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Screenshots
+      description: Optional, aber sehr hilfreich
